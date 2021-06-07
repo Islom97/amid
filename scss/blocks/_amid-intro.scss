@@ -1,0 +1,91 @@
+.amid__intro{
+    position: relative;
+    width: 1320px;
+    height: 724px;
+    border-radius: 30px;
+    margin: 0 auto;
+    background-color: #E9FBF9;
+    padding-top: 51px;
+    
+    .itwork__intro{
+        
+        .decoretion{
+            width: 117px;
+            text-align: center;
+            font-weight: $font-bold;
+            line-height: 30px;
+            color: $color-orange;
+            background-color: #fff;
+            letter-spacing: 0.1em;
+            padding: 4px 22px;
+            border-radius: 4px;
+            margin-top: 70px;
+        }
+        
+        .itwork__title{
+            font-size: 64px;
+            line-height: 80px;
+            color: $color-dark;
+            width: 570px;
+            margin-bottom: 31px;
+        }
+        
+        .itwork__text{
+            font-size: 18px;
+            line-height: 30px;
+            width: 428px;
+            color: $color-gray;
+            margin-bottom: 51px;
+        }
+        
+        .itwork__links{
+            display: flex;
+            align-items: center;
+            .itwork__link{
+                @extend %button;
+                margin-right: 55px;
+                transition: .5s ease;
+
+                &:hover{
+                    background-color: $color-syan;
+                }
+            }
+        }
+
+        .itwork__video{
+            position: relative;
+            font-weight: $font-bold;
+            color: $color-orange;
+            padding-left: 60px;
+            transition: .5s ease;
+
+            &:hover{
+                color: $color-syan;
+            }
+
+            &::before{
+                content: '';
+                position: absolute;
+                width: 63px;
+                height: 63px;
+                background-image: url(../../img/video-icon.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                top: -22px;
+                left: 0;
+            }
+        }
+
+        .itwork__img{
+            position: absolute;
+            top: 0;
+            right: 0px;
+        }
+    }
+}
+
+.parniors__logo{
+    margin-top: 170px;
+    margin-bottom: 100px;
+}

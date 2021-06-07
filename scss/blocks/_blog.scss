@@ -1,0 +1,106 @@
+.blog{
+    margin-bottom: 140px;
+    .blog__title{
+        font-size: 44px;
+        line-height: 80px;
+        font-family: $font;
+        font-weight: $font-bold;
+        color: $color-dark;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    
+    .blog__text{
+        width: 662px;
+        text-align: center;
+        color: $color-gray;
+        font-size: 18px;
+        line-height: 30px;
+        margin: 0 auto;
+        margin-bottom: 84px;
+    }
+    
+    .blod__list{
+        display: flex;
+        justify-content: space-between;
+        
+        .blog__item{
+            position: relative;
+            width: 496px;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px 4px 37px 20px;
+
+            &:after{
+                content: '';
+                position: absolute;
+                width: 75px;
+                height: 75px;
+                background-image: url(../../img/dec-22.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                top: 0;
+                right: 0;
+            }
+            &:hover{
+                box-shadow: 20px 24px 114px #F5F5F5;
+            }
+            
+            .blog__subtitle{
+                font-size: 24px;
+                line-height: 30px;
+                margin-top: 43px;
+                margin-bottom: 35px;
+            }
+            .mt{
+                margin-top: 20px;
+                width: 503px;
+            }
+            
+            .blog__subtext{
+                font-size: 18px;
+                line-height: 30px;
+                color: $color-gray;
+                margin-bottom: 45px;
+            }
+            
+            .blog__link{
+                position: relative;
+                color: $color-syan;
+                font-weight: $font-bold;
+                font-size: 18px;
+                line-height: 21px;
+                padding-right: 28px;
+
+                &::after{
+                    content: '';
+                    position: absolute;
+                    width: 18px;
+                    height: 14px;
+                    background-image: url(../../img/strelka.svg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center center;
+                    right: 0;
+                    top: 4px;
+                }
+            }
+        }
+
+        .width{
+            width: 510px;
+
+            &:after{
+                content: '';
+                position: absolute;
+                width: 75px;
+                height: 75px;
+                background-image: url(../../img/dec-16.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                top: 0;
+                right: -20px;
+            }
+        }
+    }
+}

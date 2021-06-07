@@ -1,0 +1,46 @@
+$color-dark: #021D1A;
+$color-gray: #464646;
+$color-orange: #FF823B;
+$color-syan: #124F48;
+$font-bold: 700;
+$font: 'Poppins', sans-serif;
+
+%button{
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: $font-bold;
+    color: #fff;
+    background-color: $color-orange;
+    padding: 19px 39px;
+    border-radius: 32px;
+}
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+ul{
+    list-style-type: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.container{
+    width: 1110px;
+    margin: 0 auto;
+}
+
+@import './general';

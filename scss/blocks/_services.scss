@@ -1,0 +1,105 @@
+.sevices__write{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    
+    .services__title{
+        font-family: $font;
+        width: 534px;
+        font-size: 44px;
+        line-height: 80px;
+        color: $color-dark;
+    }
+    
+    .services__text{
+        width: 428px;
+        font-size: 18px;
+        line-height: 30px;
+        color: $color-gray;
+    }
+}
+
+.services__list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+    
+    .services__item{
+        position: relative;
+        width: 350px;
+        padding: 160px 46px 45px 37px;
+        background: #FFFFFF;
+        transition: .5s ease;
+
+        &::before{
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background-image: url(../../img/card.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 50px;
+            left: 34px;
+        }
+
+        &:hover{
+            box-shadow: 0px 20px 84px rgba(245, 245, 245, 0.8);
+            border-radius: 20px
+        }
+        
+        .services__subtitle{
+            font-size: 24px;
+            line-height: 28px;
+            color: $color-dark;
+            margin-bottom: 34px;
+            width: 320px;
+        }
+        
+        .services__text{
+            font-size: 18px;
+            line-height: 36px;
+            color: $color-gray;
+        }
+        .services__link{
+            position: relative;
+            margin-top: 28px;
+            font-size: 18px;
+            line-height: 21px;
+            color: $color-syan;
+            font-weight: $font-bold;
+            padding-right: 29px;
+            
+            &::after{
+                content: '';
+                position: absolute;
+                width: 14px;
+                height: 14px;
+                background-image: url(../../img/strelka.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                top: 4px;
+                right: 0;
+            }
+        }
+    }
+
+    .bg-2{
+        position: relative;
+
+        &::before{
+            content: '';
+            background-image: url(../../img/community.svg);
+        }
+    }
+    .bg-3{
+        position: relative;
+
+
+        &::before{
+            content: '';
+            background-image: url(../../img/plans.svg);
+        }
+    }
+}

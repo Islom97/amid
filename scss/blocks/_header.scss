@@ -1,0 +1,54 @@
+.header{
+    
+    .header__intro{
+        margin: 30px auto;
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        .logo__img{
+            width: 118px;
+            height: 42px;
+            transition: .5s ease;
+
+            &:hover{
+                opacity: .6;
+            }
+        }
+        
+        .nav__list{
+            display: flex;
+            align-items: center;
+            
+            .nav__item{
+                
+                
+                .nav__link{
+                    display: inline-block;
+                    color: $color-gray;
+                    font-weight: $font-bold;
+                    transition: .5s ease;
+                    padding: 15px 30px;
+                    &:hover{
+                        color: #fff;
+                        background-color: $color-syan;
+                    }
+                }
+            }
+        }
+        
+        .log-in{
+            
+            .log-in__link{
+                @extend %button;
+                background-color: $color-syan;
+                transition: .5s ease;
+                
+                &:hover{
+                    background-color: $color-orange;
+                }
+            }
+        }
+    }
+}

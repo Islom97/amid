@@ -1,0 +1,117 @@
+.achievements{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+    
+    .achievements__left{
+        
+        .achievements__title{
+            width: 540px;
+            color: $color-dark;
+            font-family: $font;
+            font-size: 44px;
+            line-height: 80px;
+            margin-bottom: 140px;
+        }
+        .orange{
+            color: $color-orange;
+        }
+        
+        .achievements__subtitle{
+            font-size: 24px;
+            line-height: 28px;
+            margin-top: 35px;
+            margin-bottom: 35px;
+        }
+        
+        .achievements__text{
+            width: 511px;
+            font-size: 18px;
+            line-height: 36px;
+            color: $color-gray;
+            margin-bottom: 45px;
+        }
+        
+        .achievements__link{
+            @extend %button;
+            position: relative;
+            padding-right: 63px;
+            transition: .4s ease;
+            
+            &:hover{
+                background-color: $color-syan;
+            }
+            
+            &::after{
+                content: '';
+                position: absolute;
+                width: 14px;
+                height: 14px;
+                background-image: url(../../img/strelka-light.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                top: 22px;
+                right: 37px;
+            }
+        }
+    }
+}
+
+.achievements__right{
+    margin-top: 60px;
+    .right__list{
+        
+        .right__item{
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            
+            &:nth-child(4){
+                margin-bottom: 70px;
+            }
+            
+            .right__number{
+                font-size: 36px;
+                line-height: 80px;
+                font-weight: $font-bold;
+                color: rgba(18, 79, 72, 0.37);
+                margin-right: 60px;
+            }
+            .mr{
+                margin-right: 37px;
+            }
+            .right__text{
+                width: 146px;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 26px;
+                color: $color-syan;
+                margin-right: 80px;
+            }
+            
+            .right__from{
+                font-size: 14px;
+                line-height: 26px;
+                color: $color-orange;
+                font-weight: $font-bold;
+            }
+            
+            
+        }
+    }
+    
+    .achievements__subtitle{
+        font-size: 24px;
+        line-height: 28px;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+    
+    .achievements__text{
+        width: 511px;
+        font-size: 18px;
+        line-height: 36px;
+        color: $color-gray;
+        margin-bottom: 45px;
+    }
+}

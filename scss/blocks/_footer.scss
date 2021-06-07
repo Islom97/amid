@@ -1,0 +1,133 @@
+.footer{
+    background-color: #E9FBF9;
+    
+    .footer__title{
+        width: 637px;
+        font-family: $font;
+        font-size: 44px;
+        line-height: 66px;
+        text-align: center;
+        padding-top: 70px;
+        margin: 0 auto;
+        margin-bottom: 45px;
+    }
+    
+    .footer__links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 70px;
+        
+        .click{
+            color: $color-orange;
+            font-family: $font;
+            font-size: 18px;
+            line-height: 27px;
+            margin-right: 27px;
+            transition: .5s ease;
+            &:hover{
+                color: $color-syan;
+            }
+        }
+        .subscribe{
+            @extend %button;
+            position: relative;
+            padding-right: 75px;
+            transition: .5s ease;
+            
+            &:hover{
+                background-color: $color-syan;
+            }
+            
+            &::after{
+                content: '';
+                position: absolute;
+                width: 14px;
+                height: 14px;
+                background-image: url(../../img/strelka-light.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                top: 22px;
+                right: 37px;
+            }
+        }
+    }
+    
+    .footer__info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 70px;
+        
+        .logo__text{
+            color: $color-orange;
+            font-size: 12px;
+            line-height: 14px;
+        }
+        
+        .footer__nav{
+            display: flex;
+            align-items: center;
+            
+            .footer__item{
+                margin-right: 70px;
+                
+                &:nth-child(4){
+                    margin-right: 0;
+                }
+                
+                .footer__link{
+                    color: $color-syan;
+                    transition: .5s ease;
+                    
+                    &:hover{
+                        color: $color-orange;
+                        font-weight: $font-bold;
+                    }
+                }
+            }
+        }
+        
+        .info__text{
+            width: 193px;
+            color: $color-syan;
+            font-size: 18px;
+            line-height: 36px;
+        }
+    }
+    
+    .footer__buttom{
+        background-color: $color-syan;
+        
+        .buttom{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 17px 0;
+            
+            .buttom__text{
+                font-size: 18px;
+                line-height: 27px;
+                color: #fff;
+            }
+
+            .social{
+                display: flex;
+                align-items: center;
+
+                .social__item{
+                    margin-left: 30px;
+
+                    .social__img{
+                        cursor: pointer;
+                        transition: .4s ease;
+                        &:hover{
+                            opacity: .5;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
