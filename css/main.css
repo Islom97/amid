@@ -711,4 +711,6 @@ a {
 
 .footer .footer__buttom .buttom .social .social__item .social__img:hover {
   opacity: .5;
+  -webkit-transform: translateY(-5pxa);
+          transform: translateY(-5pxa);
 }
