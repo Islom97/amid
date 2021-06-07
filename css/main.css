@@ -470,6 +470,8 @@ a {
   background-color: #fff;
   border-radius: 10px;
   padding: 30px 4px 37px 20px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
 }
 
 .blog .blod__list .blog__item:after {
